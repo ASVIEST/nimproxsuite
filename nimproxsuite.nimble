@@ -1,5 +1,5 @@
 mode = ScriptMode.Verbose
-version = "0.1.1"
+version = "0.1.2"
 author = "ASVIEST"
 description = "nim bindings to ProxSuite"
 license = "BSD-2-Clause"
