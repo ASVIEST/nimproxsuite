@@ -39,8 +39,8 @@ type
     PROXSUITE_C_EIGEN_VALUE_ESTIMATE_METHOD_OPTION_EXACT_METHOD = 1
   proxsuite_c_eigen_value_estimate_method_option* = enum_proxsuite_c_eigen_value_estimate_method_option
   enum_proxsuite_c_hessian_type* {.pure, size:sizeof(cint), importc:"enum proxsuite_c_hessian_type", header:"proxsuite_c_api.h".} = enum
-    PROXSUITE_C_HESSIAN_TYPE_DENSE = 0,
-    PROXSUITE_C_HESSIAN_TYPE_ZERO = 1,
+    PROXSUITE_C_HESSIAN_TYPE_ZERO = 0,
+    PROXSUITE_C_HESSIAN_TYPE_DENSE = 1,
     PROXSUITE_C_HESSIAN_TYPE_DIAGONAL = 2
   proxsuite_c_hessian_type* = enum_proxsuite_c_hessian_type
   enum_proxsuite_c_initial_guess_status* {.pure, size:sizeof(cint), importc:"enum proxsuite_c_initial_guess_status", header:"proxsuite_c_api.h".} = enum
@@ -64,8 +64,8 @@ type
   proxsuite_c_qp_solver_output* = enum_proxsuite_c_qp_solver_output
   enum_proxsuite_c_sparse_backend* {.pure, size:sizeof(cint), importc:"enum proxsuite_c_sparse_backend", header:"proxsuite_c_api.h".} = enum
     PROXSUITE_C_SPARSE_BACKEND_AUTOMATIC = 0,
-    PROXSUITE_C_SPARSE_BACKEND_MATRIX_FREE = 1,
-    PROXSUITE_C_SPARSE_BACKEND_SPARSE_CHOLESKY = 2
+    PROXSUITE_C_SPARSE_BACKEND_SPARSE_CHOLESKY = 1,
+    PROXSUITE_C_SPARSE_BACKEND_MATRIX_FREE = 2
   proxsuite_c_sparse_backend* = enum_proxsuite_c_sparse_backend
   proxsuite_c_backward_data_double* {.incompleteStruct, importc:"proxsuite_c_backward_data_double", header:"proxsuite_c_api.h".} = object
   proxsuite_c_dense_batch_qp_double* {.incompleteStruct, importc:"proxsuite_c_dense_batch_qp_double", header:"proxsuite_c_api.h".} = object
