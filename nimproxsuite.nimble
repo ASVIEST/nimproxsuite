@@ -8,6 +8,9 @@ srcDir = "src"
 feature "gen":
   requires "https://github.com/ASVIEST/henka#externc"
 
+feature "linkStatic":
+  discard
+
 after install:
   if dirExists("deps/henka") and not dirExists("deps/vendor/cproxsuite"):
     mkDir "deps/vendor"
