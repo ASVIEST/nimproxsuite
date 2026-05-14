@@ -14,3 +14,6 @@ after install:
 
     exec "git clone --depth 1 " &
       "https://github.com/ASVIEST/cproxsuite deps/vendor/cproxsuite"
+
+  when defined(feature.nimproxsuite.linkStatic):
+    switch("dynlibOverride", "cproxsuite")
