@@ -1,5 +1,5 @@
 mode = ScriptMode.Verbose
-version = "0.1.2"
+version = "0.1.3"
 author = "ASVIEST"
 description = "nim bindings to ProxSuite"
 license = "BSD-2-Clause"
@@ -9,7 +9,7 @@ feature "gen":
   requires "https://github.com/ASVIEST/henka#externc"
 
 feature "linkStatic":
-  discard
+  requires "https://github.com/ASVIEST/tinydbus"
 
 after install:
   if dirExists("deps/henka") and not dirExists("deps/vendor/cproxsuite"):
